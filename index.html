@@ -1,368 +1,706 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CV Full Stack Developer</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/styles.css" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#f76e8b",
-                        "background-light": "#f5f4ee",
-                        "background-dark": "#1f1f1f",
-                        "card-light": "#ffffff",
-                        "card-dark": "#2a2a2a",
-                        "accent-green": "#99a888",
-                        "secondary-brown": "#c59a86",
-                        "hover-brown": "#9b5e4a",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CV Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f76e8b",
+              navbar: "#919191",
+              "nav-bg": "#919191",
+              "nav-text": "#f1f0f6",
+              "nav-hover": "#c59a86",
+              "nav-control": "#dedbea",
+              "background-light": "#f5f4ee",
+              "background-dark": "#1f1f1f",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2a2a",
+              "accent-green": "#99a888",
+              "secondary-brown": "#c59a86",
+              "hover-brown": "#9b5e4a",
+              "hero-accent": "#93a383",
+              "badge-hire": "#dedbea",
             },
-        }
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-
-</head>
-<body class="bg-background-light dark:bg-background-dark text-[#1f1f1f] dark:text-[#f5f4ee] font-display transition-colors duration-300">
-
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#1f1f1f] dark:text- font-display transition-colors duration-300"
+  >
     <!-- Header / Navbar -->
-<header class="sticky top-0 z-50 w-full border-b border-black/5 dark:border-white/5 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<div class="bg-primary p-1.5 rounded-lg text-white">
-<span class="material-symbols-outlined block">terminal</span>
-</div>
-<span class="text-lg font-extrabold tracking-tight">DevPortfolio</span>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#home">Home</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#experience">Experience</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#certifications">Certifications</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
-</nav>
-<div class="flex items-center gap-3">
-<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-brown/10 dark:bg-white/5 hover:bg-secondary-brown/20 transition-colors text-xs font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-sm">translate</span>
-                    EN/ES
-                </button>
-<button class="p-2 rounded-lg bg-secondary-brown/10 dark:bg-white/5 hover:bg-secondary-brown/20 transition-colors">
-<span class="material-symbols-outlined dark:hidden">dark_mode</span>
-<span class="material-symbols-outlined hidden dark:block">light_mode</span>
-</button>
-</div>
-</div>
-</header>
-<main class="max-w-7xl mx-auto px-6">
+    <header
+      class="sticky top-0 z-50 w-full bg-nav-bg/100 text-nav-text border-b border-black/10 backdrop-blur-md"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div class="bg-primary p-1.5 rounded-lg text-white">
+            <span class="material-symbols-outlined block">terminal</span>
+          </div>
+          <span class="text-lg font-extrabold tracking-tight">CV Online</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-sm font-medium text-nav-text/90 hover:text-nav-hover transition-colors"
+            href="#home"
+            >Menú</a
+          >
 
-    <!-- Hero Section -->
-<section class="py-16 md:py-24" id="home">
-<div class="flex flex-col md:flex-row items-center gap-12">
-<div class="w-full md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
-<div class="space-y-4">
-<span class="px-3 py-1 text-xs font-bold bg-accent-green/20 text-accent-green dark:text-accent-green rounded-full uppercase tracking-widest">Available for Hire</span>
-<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
-                            Full Stack <span class="text-primary">Developer.</span>
-</h1>
-<p class="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-lg leading-relaxed">
-                            Building minimalist, modern, and scalable web solutions with a focus on user experience and clean code.
-                        </p>
-</div>
-<div class="flex flex-wrap gap-4">
-<a class="flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg font-bold text-base hover:opacity-90 transition-all shadow-lg shadow-primary/20" href="#projects">
-                            View My Projects
-                        </a>
-<a class="flex items-center justify-center bg-secondary-brown text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-hover-brown transition-all" href="#">
-                            Download CV
-                        </a>
-</div>
-</div>
-<div class="w-full md:w-1/2 order-1 md:order-2">
-<div class="relative group">
-<div class="absolute -inset-1 bg-gradient-to-r from-primary to-accent-green rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-<div class="relative aspect-square w-full max-w-[480px] mx-auto overflow-hidden rounded-2xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="Professional portrait of a male full stack developer smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBypdfuSEjy0X-RkTq1Rpm7G6S7-mgM6kL_qm76BN3mZYsnJppGpMmt3Y6J-Prdf4lwNmTLvLCZKe8c2jzk2q4iiX6kDPzcHf8ikMRRUDxZjeDM39RYilhpH-RQLQ6mKbTUTcxaVHd00io67VpgkFmjqoGs27Qaq9W6s-pDGy6aoLdTKZvs17EB8j3wWGZbAn3FOe0q_MGSpYc4MxhzrSLlXWlxBsIUUpMgEzqJTASjYX1zrMeN7h1R02LAqtSiqUHQVeanS2o6fds"/>
-</div>
-</div>
-</div>
-</div>
-</section>
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#about"
+            >Sobre mi</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#experience"
+            >Experiencia</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#projects"
+            >Proyectos</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#certifications"
+            >Certificaciones</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#contact"
+            >Contacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-3">
+          <button
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-badge-hire/20 transition-colors text-xs font-bold uppercase tracking-wider"
+          >
+            <span class="material-symbols-outlined text-sm">translate</span>
+            EN/ES
+          </button>
+          <button
+            class="p-2 rounded-lg  dark:bg-white/5 hover:bg-badge-hire/20 transition-colors"
+          >
+            <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+            <span class="material-symbols-outlined hidden dark:block"
+              >light_mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6">
+      <!-- Hero Section -->
+      <section class="py-16 md:py-24" id="home">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="w-full md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
+            <div class="space-y-4">
+              <span
+                class="px-3 py-1 text-xs font-semibold bg-badge-hire text-[#3f3f4f] rounded-full uppercase tracking-widest"
+              >
+                Available for Hire
+              </span>
 
-<!-- About Me Section -->
-<section class="py-20 border-t border-black/5 dark:border-white/5" id="about">
-<div class="max-w-3xl">
-<h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-<span class="w-8 h-[2px] bg-primary"></span>
-                    About Me
-                </h2>
-<div class="space-y-6 text-lg leading-relaxed text-neutral-600 dark:text-neutral-400">
-<p>
-                        A passionate Full Stack Developer with a minimalist design philosophy. I specialize in building responsive applications that bridge the gap between robust backend logic and intuitive frontend interfaces.
-                    </p>
-<p>
-                        With over 5 years of experience in the tech industry, I've worked with startups and established companies to deliver high-quality software solutions. My approach combines technical excellence with a deep understanding of business goals.
-                    </p>
-</div>
-</div>
-</section>
+              <h1
+                class="text-5xl md:text-7xl font-black leading-tight tracking-tighter"
+              >
+                Full Stack <span class="text-hero-accent">Developer.</span>
+              </h1>
+              <p
+                class="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-lg leading-relaxed"
+              >
+                Building minimalist, modern, and scalable web solutions with a
+                focus on user experience and clean code.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a
+                class="flex items-center justify-center bg-secondary-brown text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-hover-brown transition-colors shadow-lg shadow-secondary-brown/30"
+                href="#projects"
+              >
+                View My Projects
+              </a>
 
-<!-- Experience & Education -->
-<section class="py-20 border-t border-black/5 dark:border-white/5" id="experience">
-<h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-<span class="w-8 h-[2px] bg-primary"></span>
-                Experience &amp; Education
+              <a
+                class="flex items-center justify-center bg-secondary-brown text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-hover-brown transition-all"
+                href="#"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="relative group">
+              <div
+                class="relative aspect-square w-full max-w-[480px] mx-auto overflow-hidden rounded-2xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 shadow-2xl"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="Portrait cv "
+                  src="assets/img/img_cv.jpeg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section
+        class="py-20 border-t border-black/5 dark:border-white/5"
+        id="about"
+      >
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <span class="w-8 h-[2px] bg-primary"></span>
+            About Me
+          </h2>
+          <div
+            class="space-y-6 text-lg leading-relaxed text-neutral-600 dark:text-neutral-400"
+          >
+            <p>
+              A passionate Full Stack Developer with a minimalist design
+              philosophy. I specialize in building responsive applications that
+              bridge the gap between robust backend logic and intuitive frontend
+              interfaces.
+            </p>
+            <p>
+              With over 5 years of experience in the tech industry, I've worked
+              with startups and established companies to deliver high-quality
+              software solutions. My approach combines technical excellence with
+              a deep understanding of business goals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & Education -->
+      <section
+        class="py-20 border-t border-black/5 dark:border-white/5"
+        id="experience"
+      >
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Experience &amp; Education
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Experience -->
+          <div class="space-y-8">
+            <h3
+              class="text-xl font-bold text-accent-green flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">work</span> Work
+              Experience
+            </h3>
+            <div class="relative pl-8 border-l-2 border-primary/20 space-y-10">
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"
+                ></div>
+                <div
+                  class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm"
+                >
+                  <span class="text-sm font-bold text-primary"
+                    >2021 — Present</span
+                  >
+                  <h4 class="text-lg font-bold mt-1">
+                    Senior Software Engineer
+                  </h4>
+                  <p class="text-sm text-neutral-500 mb-3">
+                    TechInnovate Solutions
+                  </p>
+                  <p
+                    class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400"
+                  >
+                    Leading the development of a cloud-native SaaS platform
+                    using React, Node.js, and AWS.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary/40 border-4 border-background-light dark:border-background-dark"
+                ></div>
+                <div
+                  class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm"
+                >
+                  <span class="text-sm font-bold text-primary"
+                    >2018 — 2021</span
+                  >
+                  <h4 class="text-lg font-bold mt-1">Full Stack Developer</h4>
+                  <p class="text-sm text-neutral-500 mb-3">
+                    Creative Digital Agency
+                  </p>
+                  <p
+                    class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400"
+                  >
+                    Developed custom e-commerce solutions and interactive web
+                    experiences for global brands.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="space-y-8">
+            <h3
+              class="text-xl font-bold text-accent-green flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">school</span> Education
+            </h3>
+            <div class="relative pl-8 border-l-2 border-primary/20 space-y-10">
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"
+                ></div>
+                <div
+                  class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm"
+                >
+                  <span class="text-sm font-bold text-primary"
+                    >2014 — 2018</span
+                  >
+                  <h4 class="text-lg font-bold mt-1">B.S. Computer Science</h4>
+                  <p class="text-sm text-neutral-500 mb-3">
+                    University of Technology
+                  </p>
+                  <p
+                    class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400"
+                  >
+                    Specialized in Software Engineering and Distributed Systems.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary/40 border-4 border-background-light dark:border-background-dark"
+                ></div>
+                <div
+                  class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm"
+                >
+                  <span class="text-sm font-bold text-primary">2019</span>
+                  <h4 class="text-lg font-bold mt-1">Advanced Web Bootcamp</h4>
+                  <p class="text-sm text-neutral-500 mb-3">
+                    Lifelong Learning UDD
+                  </p>
+                  <p
+                    class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400"
+                  >
+                    Intensive program focused on modern JavaScript frameworks
+                    and DevOps practices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section
+        class="py-20 border-t border-black/5 dark:border-white/5"
+        id="projects"
+      >
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Featured Projects
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Dashboard analytics interface project preview"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVWwivbR6NT0wP6BkU2b0Oku0XKtIpOL8yDGLoaqxgZ45XvXfbMfuYhb56h-6YYUMNJ1KNhOP1B34wRpD4H2aPKISwgqlx62VXD5hHTi_6Num9ZkcyNZVoOu3ZnZrVB-RMHacVhcqPMhQz4rYdb0i4pw4h0sJS84blFKaYmjWmwNJAPWCalfAh0eJlh51QWXafbmY2p1gH0anrIngtAglqxQfXyJP06xcui6XalBwh7KOuTWWAD0gM9Dosnp0_oWZE6QCx5WfxZI"
+              />
+              <div
+                class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4"
+              >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">link</span></a
+                >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">code</span></a
+                >
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h4 class="text-xl font-bold">FinTech Dashboard</h4>
+              <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                A real-time financial tracking application with interactive
+                charts and automated reporting.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >React</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Node.js</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >D3.js</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Modern e-commerce platform mobile and desktop view"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl61raF-kfVwCigHX3tFzMMb2FHnsZQmo1ZsFABV6Be01hPhpS4LvCbz7yobJou2OP4WFOse-8C2NJGTssTRszT5r4xCyB1wsHRd62bqcKW5jqBKfIkpg03AmpdP7PsawPde9KhRiwjWJgbI2seSn1DtdQ4JAUiRmaO5K7toglWiB7KzFbBA2rh0G7m8BPoBO0_QdUPPx059kjI9qedD3ms8t7oAjE26wW0DpVbX1sWGG0lQUmqpXd6D-VY3Ssp0evzaEtCKocCX0"
+              />
+              <div
+                class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4"
+              >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">link</span></a
+                >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">code</span></a
+                >
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h4 class="text-xl font-bold">EcoShop Platform</h4>
+              <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                Headless e-commerce solution focusing on sustainability and
+                lightning-fast performance.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Next.js</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >GraphQL</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Stripe</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Code editor showing backend API architecture"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVPm_VL7LYiw6ONRP50vtVNSs546y3MxgX_LZHvtdUnU0Md_srgNIRHN07Rn9Z78MswUDhzR_9yDgd5UGbF1ll0s2lnjmJymwOLG2qNNZjzInwAXhJH75amJneZIBv2mjS8KWE640mVD9uOvCiSfgpHv0KutKN8hU4MQ88bGFYlJhro9looBQZyDgq9um3EYLWyabyc0AsNqIG6WPoSz3iztpyno4yJLwYqZlNeITvHhM7vsbViLlpT1C2S01o1U--O8wsUdFkygw"
+              />
+              <div
+                class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4"
+              >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">link</span></a
+                >
+                <a
+                  class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform"
+                  href="#"
+                  ><span class="material-symbols-outlined">code</span></a
+                >
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h4 class="text-xl font-bold">TaskFlow Pro</h4>
+              <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                A collaborative task management tool with drag-and-drop and
+                real-time socket updates.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Vue.js</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Firebase</span
+                >
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Carousel -->
+      <section
+        class="py-20 border-t border-black/5 dark:border-white/5 overflow-hidden"
+        id="certifications"
+      >
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Certifications
+        </h2>
+        <div class="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-snap-x">
+          <!-- Cert 1 -->
+          <div
+            class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center"
+            >
+              <img
+                class="w-12 h-12 grayscale opacity-70"
+                data-alt="AWS Certified Solutions Architect digital badge logo"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36WaRIxcOyfT0FWTXFB-hl9KGA8MZAOBjsUWptd0BpO38Pp0xbd1J47g_Ucg3gkXSXTUMVwnKNjuAa7KnxlirFGwlKxhx11DcfAJHkFeJ8AVj3cEFK74q6lAF8k1bWqgTL7FnCfKX2qLObqAnOMIOGYO86gDbzPCFCuLuGDeAoWMJvSIjyzk4wkRk3mIyi-IFGd7zQLh9s8ZXEieHZEiqUZytM3lnYndyAWdGCbh3OQG-9gTWxUXwsHtW81wec8VSBY9CG1q0ei8"
+              />
+            </div>
+            <h4 class="font-bold text-lg leading-snug">Solutions Architect</h4>
+            <p class="text-sm text-neutral-500 mt-1">Amazon Web Services</p>
+            <p
+              class="text-xs font-bold text-primary mt-4 tracking-widest uppercase"
+            >
+              Issued 2023
+            </p>
+          </div>
+          <!-- Cert 2 -->
+          <div
+            class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center"
+            >
+              <img
+                class="w-12 h-12 grayscale opacity-70"
+                data-alt="Google Cloud Professional Developer badge"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA574qw9VPvwXF_FY_kQXCclDO2khIPv8_LX5nIXr1bgs_U7iPH2nOHJjDA6fA-O1Kp2vh_fuiulRVuJyZVvceN20PGCJhPLa5S_gM14xFszaquIMKdCiooXqsec7ri7zQYzShe1sb3Iv6xfKw6hrKrfYAzplUl8xYVwSfwXwI5sS4ssmWVceNTZBE5nEu6iST1YAUxl2h7OkACJBCsOTR5g8GzJndJjecScytoB1tRNI9AzI0sJIKJ6UltMtbhTvFzvYbA6utDDeE"
+              />
+            </div>
+            <h4 class="font-bold text-lg leading-snug">
+              Professional Cloud Developer
+            </h4>
+            <p class="text-sm text-neutral-500 mt-1">Google Cloud</p>
+            <p
+              class="text-xs font-bold text-primary mt-4 tracking-widest uppercase"
+            >
+              Issued 2022
+            </p>
+          </div>
+          <!-- Cert 3 -->
+          <div
+            class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-4xl text-neutral-400"
+                >military_tech</span
+              >
+            </div>
+            <h4 class="font-bold text-lg leading-snug">Full Stack Bootcamp</h4>
+            <p class="text-sm text-neutral-500 mt-1">Lifelong Learning UDD</p>
+            <p
+              class="text-xs font-bold text-primary mt-4 tracking-widest uppercase"
+            >
+              Issued 2021
+            </p>
+          </div>
+          <!-- Cert 4 -->
+          <div
+            class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center"
+            >
+              <img
+                class="w-12 h-12 grayscale opacity-70"
+                data-alt="React certification badge from Meta"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyNsK67PUO9djaoZYmBZ9cQec0zaXRmDNgvib07se9y5wvJ-BKePdl7tVvw9Elelf3DlkBCoXk7AYTnkW2nAo0wjz0LLBSeSVU5PPhdNq_x42twjyCwAxAXvAgliNzXF1wFpxfkSxc5j_L2yKR2nSgV2YoNccZMCw2H5GKOOYNNFsQVC8-MTEP-HnZvgmi5GFebdthms7MX2-dYOs5vAU_DdV1PGWx8E6hTZ-ryMKkza0OACxiiZHux-2hZ-ixkKJmcMniOy5arXM"
+              />
+            </div>
+            <h4 class="font-bold text-lg leading-snug">
+              Advanced React Native
+            </h4>
+            <p class="text-sm text-neutral-500 mt-1">Meta Professional</p>
+            <p
+              class="text-xs font-bold text-primary mt-4 tracking-widest uppercase"
+            >
+              Issued 2020
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        class="py-20 border-t border-black/5 dark:border-white/5"
+        id="contact"
+      >
+        <div class="grid md:grid-cols-2 gap-16">
+          <div class="space-y-8">
+            <h2 class="text-3xl font-bold flex items-center gap-3">
+              <span class="w-8 h-[2px] bg-primary"></span>
+              Get in Touch
             </h2>
-<div class="grid md:grid-cols-2 gap-12">
-
-<!-- Experience -->
-<div class="space-y-8">
-<h3 class="text-xl font-bold text-accent-green flex items-center gap-2">
-<span class="material-symbols-outlined">work</span> Work Experience
-                    </h3>
-<div class="relative pl-8 border-l-2 border-primary/20 space-y-10">
-<div class="relative">
-<div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm">
-<span class="text-sm font-bold text-primary">2021 — Present</span>
-<h4 class="text-lg font-bold mt-1">Senior Software Engineer</h4>
-<p class="text-sm text-neutral-500 mb-3">TechInnovate Solutions</p>
-<p class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Leading the development of a cloud-native SaaS platform using React, Node.js, and AWS.</p>
-</div>
-</div>
-<div class="relative">
-<div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary/40 border-4 border-background-light dark:border-background-dark"></div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm">
-<span class="text-sm font-bold text-primary">2018 — 2021</span>
-<h4 class="text-lg font-bold mt-1">Full Stack Developer</h4>
-<p class="text-sm text-neutral-500 mb-3">Creative Digital Agency</p>
-<p class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Developed custom e-commerce solutions and interactive web experiences for global brands.</p>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Education -->
-<div class="space-y-8">
-<h3 class="text-xl font-bold text-accent-green flex items-center gap-2">
-<span class="material-symbols-outlined">school</span> Education
-                    </h3>
-<div class="relative pl-8 border-l-2 border-primary/20 space-y-10">
-<div class="relative">
-<div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm">
-<span class="text-sm font-bold text-primary">2014 — 2018</span>
-<h4 class="text-lg font-bold mt-1">B.S. Computer Science</h4>
-<p class="text-sm text-neutral-500 mb-3">University of Technology</p>
-<p class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Specialized in Software Engineering and Distributed Systems.</p>
-</div>
-</div>
-<div class="relative">
-<div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary/40 border-4 border-background-light dark:border-background-dark"></div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm">
-<span class="text-sm font-bold text-primary">2019</span>
-<h4 class="text-lg font-bold mt-1">Advanced Web Bootcamp</h4>
-<p class="text-sm text-neutral-500 mb-3">Lifelong Learning UDD</p>
-<p class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">Intensive program focused on modern JavaScript frameworks and DevOps practices.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Projects Grid -->
-<section class="py-20 border-t border-black/5 dark:border-white/5" id="projects">
-<h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-<span class="w-8 h-[2px] bg-primary"></span>
-                Featured Projects
-            </h2>
-<div class="grid md:grid-cols-3 gap-8">
-
-<!-- Project 1 -->
-<div class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl">
-<div class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dashboard analytics interface project preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVWwivbR6NT0wP6BkU2b0Oku0XKtIpOL8yDGLoaqxgZ45XvXfbMfuYhb56h-6YYUMNJ1KNhOP1B34wRpD4H2aPKISwgqlx62VXD5hHTi_6Num9ZkcyNZVoOu3ZnZrVB-RMHacVhcqPMhQz4rYdb0i4pw4h0sJS84blFKaYmjWmwNJAPWCalfAh0eJlh51QWXafbmY2p1gH0anrIngtAglqxQfXyJP06xcui6XalBwh7KOuTWWAD0gM9Dosnp0_oWZE6QCx5WfxZI"/>
-<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">link</span></a>
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">code</span></a>
-</div>
-</div>
-<div class="p-6 space-y-4">
-<h4 class="text-xl font-bold">FinTech Dashboard</h4>
-<p class="text-sm text-neutral-600 dark:text-neutral-400">A real-time financial tracking application with interactive charts and automated reporting.</p>
-<div class="flex flex-wrap gap-2 pt-2">
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">React</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Node.js</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">D3.js</span>
-</div>
-</div>
-</div>
-
-<!-- Project 2 -->
-<div class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl">
-<div class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern e-commerce platform mobile and desktop view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl61raF-kfVwCigHX3tFzMMb2FHnsZQmo1ZsFABV6Be01hPhpS4LvCbz7yobJou2OP4WFOse-8C2NJGTssTRszT5r4xCyB1wsHRd62bqcKW5jqBKfIkpg03AmpdP7PsawPde9KhRiwjWJgbI2seSn1DtdQ4JAUiRmaO5K7toglWiB7KzFbBA2rh0G7m8BPoBO0_QdUPPx059kjI9qedD3ms8t7oAjE26wW0DpVbX1sWGG0lQUmqpXd6D-VY3Ssp0evzaEtCKocCX0"/>
-<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">link</span></a>
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">code</span></a>
-</div>
-</div>
-<div class="p-6 space-y-4">
-<h4 class="text-xl font-bold">EcoShop Platform</h4>
-<p class="text-sm text-neutral-600 dark:text-neutral-400">Headless e-commerce solution focusing on sustainability and lightning-fast performance.</p>
-<div class="flex flex-wrap gap-2 pt-2">
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Next.js</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">GraphQL</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Stripe</span>
-</div>
-</div>
-</div>
-
-<!-- Project 3 -->
-<div class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-black/5 dark:border-white/5 transition-all hover:-translate-y-2 hover:shadow-xl">
-<div class="aspect-video relative overflow-hidden bg-neutral-200 dark:bg-neutral-800">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Code editor showing backend API architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVPm_VL7LYiw6ONRP50vtVNSs546y3MxgX_LZHvtdUnU0Md_srgNIRHN07Rn9Z78MswUDhzR_9yDgd5UGbF1ll0s2lnjmJymwOLG2qNNZjzInwAXhJH75amJneZIBv2mjS8KWE640mVD9uOvCiSfgpHv0KutKN8hU4MQ88bGFYlJhro9looBQZyDgq9um3EYLWyabyc0AsNqIG6WPoSz3iztpyno4yJLwYqZlNeITvHhM7vsbViLlpT1C2S01o1U--O8wsUdFkygw"/>
-<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">link</span></a>
-<a class="p-2 bg-white rounded-full text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">code</span></a>
-</div>
-</div>
-<div class="p-6 space-y-4">
-<h4 class="text-xl font-bold">TaskFlow Pro</h4>
-<p class="text-sm text-neutral-600 dark:text-neutral-400">A collaborative task management tool with drag-and-drop and real-time socket updates.</p>
-<div class="flex flex-wrap gap-2 pt-2">
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Vue.js</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Firebase</span>
-<span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Tailwind</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Certifications Carousel -->
-<section class="py-20 border-t border-black/5 dark:border-white/5 overflow-hidden" id="certifications">
-<h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-<span class="w-8 h-[2px] bg-primary"></span>
-                Certifications
-            </h2>
-<div class="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-snap-x">
-
-<!-- Cert 1 -->
-<div class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors">
-<div class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-<img class="w-12 h-12 grayscale opacity-70" data-alt="AWS Certified Solutions Architect digital badge logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36WaRIxcOyfT0FWTXFB-hl9KGA8MZAOBjsUWptd0BpO38Pp0xbd1J47g_Ucg3gkXSXTUMVwnKNjuAa7KnxlirFGwlKxhx11DcfAJHkFeJ8AVj3cEFK74q6lAF8k1bWqgTL7FnCfKX2qLObqAnOMIOGYO86gDbzPCFCuLuGDeAoWMJvSIjyzk4wkRk3mIyi-IFGd7zQLh9s8ZXEieHZEiqUZytM3lnYndyAWdGCbh3OQG-9gTWxUXwsHtW81wec8VSBY9CG1q0ei8"/>
-</div>
-<h4 class="font-bold text-lg leading-snug">Solutions Architect</h4>
-<p class="text-sm text-neutral-500 mt-1">Amazon Web Services</p>
-<p class="text-xs font-bold text-primary mt-4 tracking-widest uppercase">Issued 2023</p>
-</div>
-<!-- Cert 2 -->
-<div class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors">
-<div class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-<img class="w-12 h-12 grayscale opacity-70" data-alt="Google Cloud Professional Developer badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA574qw9VPvwXF_FY_kQXCclDO2khIPv8_LX5nIXr1bgs_U7iPH2nOHJjDA6fA-O1Kp2vh_fuiulRVuJyZVvceN20PGCJhPLa5S_gM14xFszaquIMKdCiooXqsec7ri7zQYzShe1sb3Iv6xfKw6hrKrfYAzplUl8xYVwSfwXwI5sS4ssmWVceNTZBE5nEu6iST1YAUxl2h7OkACJBCsOTR5g8GzJndJjecScytoB1tRNI9AzI0sJIKJ6UltMtbhTvFzvYbA6utDDeE"/>
-</div>
-<h4 class="font-bold text-lg leading-snug">Professional Cloud Developer</h4>
-<p class="text-sm text-neutral-500 mt-1">Google Cloud</p>
-<p class="text-xs font-bold text-primary mt-4 tracking-widest uppercase">Issued 2022</p>
-</div>
-<!-- Cert 3 -->
-<div class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors">
-<div class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-<span class="material-symbols-outlined text-4xl text-neutral-400">military_tech</span>
-</div>
-<h4 class="font-bold text-lg leading-snug">Full Stack Bootcamp</h4>
-<p class="text-sm text-neutral-500 mt-1">Lifelong Learning UDD</p>
-<p class="text-xs font-bold text-primary mt-4 tracking-widest uppercase">Issued 2021</p>
-</div>
-<!-- Cert 4 -->
-<div class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors">
-<div class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-<img class="w-12 h-12 grayscale opacity-70" data-alt="React certification badge from Meta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyNsK67PUO9djaoZYmBZ9cQec0zaXRmDNgvib07se9y5wvJ-BKePdl7tVvw9Elelf3DlkBCoXk7AYTnkW2nAo0wjz0LLBSeSVU5PPhdNq_x42twjyCwAxAXvAgliNzXF1wFpxfkSxc5j_L2yKR2nSgV2YoNccZMCw2H5GKOOYNNFsQVC8-MTEP-HnZvgmi5GFebdthms7MX2-dYOs5vAU_DdV1PGWx8E6hTZ-ryMKkza0OACxiiZHux-2hZ-ixkKJmcMniOy5arXM"/>
-</div>
-<h4 class="font-bold text-lg leading-snug">Advanced React Native</h4>
-<p class="text-sm text-neutral-500 mt-1">Meta Professional</p>
-<p class="text-xs font-bold text-primary mt-4 tracking-widest uppercase">Issued 2020</p>
-</div>
-</div>
-</section>
-
-<!-- Contact Section -->
-<section class="py-20 border-t border-black/5 dark:border-white/5" id="contact">
-<div class="grid md:grid-cols-2 gap-16">
-<div class="space-y-8">
-<h2 class="text-3xl font-bold flex items-center gap-3">
-<span class="w-8 h-[2px] bg-primary"></span>
-                        Get in Touch
-                    </h2>
-<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                        Interested in working together or have a question? Feel free to reach out via the form or my social channels.
-                    </p>
-<div class="space-y-4">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">mail</span>
-</div>
-<span class="font-medium">hello@devportfolio.com</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">location_on</span>
-</div>
-<span class="font-medium">San Francisco, CA</span>
-</div>
-</div>
-<div class="flex gap-4 pt-4">
-<a class="w-12 h-12 bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 rounded-lg flex items-center justify-center hover:text-primary transition-colors" href="#">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-</a>
-<a class="w-12 h-12 bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 rounded-lg flex items-center justify-center hover:text-primary transition-colors" href="#">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
-</a>
-</div>
-</div>
-<div class="bg-card-light dark:bg-card-dark p-8 rounded-2xl border border-black/5 dark:border-white/5 shadow-lg">
-<form class="space-y-6">
-<div class="space-y-2">
-<label class="text-sm font-bold uppercase tracking-widest text-neutral-500">Name</label>
-<input class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all" placeholder="John Doe" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-bold uppercase tracking-widest text-neutral-500">Email</label>
-<input class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all" placeholder="john@example.com" type="email"/>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-bold uppercase tracking-widest text-neutral-500">Message</label>
-<textarea class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all" placeholder="How can I help you?" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2" type="submit">
-                            Send Message
-                            <span class="material-symbols-outlined text-sm">send</span>
-</button>
-</form>
-</div>
-</div>
-</section>
-</main>
-<footer class="py-12 border-t border-black/5 dark:border-white/5 text-center text-sm text-neutral-500">
-<div class="max-w-7xl mx-auto px-6">
-<p>© 2024 DevPortfolio. Built with React, Tailwind CSS and passion.</p>
-</div>
-</footer>
-</body></html>
+            <p
+              class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed"
+            >
+              Interested in working together or have a question? Feel free to
+              reach out via the form or my social channels.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-xl">mail</span>
+                </div>
+                <span class="font-medium">hello@devportfolio.com</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-xl"
+                    >location_on</span
+                  >
+                </div>
+                <span class="font-medium">San Francisco, CA</span>
+              </div>
+            </div>
+            <div class="flex gap-4 pt-4">
+              <a
+                class="w-12 h-12 bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 rounded-lg flex items-center justify-center hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="w-12 h-12 bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 rounded-lg flex items-center justify-center hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark p-8 rounded-2xl border border-black/5 dark:border-white/5 shadow-lg"
+          >
+            <form class="space-y-6">
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-bold uppercase tracking-widest text-neutral-500"
+                  >Name</label
+                >
+                <input
+                  class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
+                  placeholder="John Doe"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-bold uppercase tracking-widest text-neutral-500"
+                  >Email</label
+                >
+                <input
+                  class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
+                  placeholder="john@example.com"
+                  type="email"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-bold uppercase tracking-widest text-neutral-500"
+                  >Message</label
+                >
+                <textarea
+                  class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
+                  placeholder="How can I help you?"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button
+                class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
+                type="submit"
+              >
+                Send Message
+                <span class="material-symbols-outlined text-sm">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="py-12 border-t border-black/5 dark:border-white/5 text-center text-sm text-neutral-500"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <p>© 2024 DevPortfolio. Built with React, Tailwind CSS and passion.</p>
+      </div>
+    </footer>
+  </body>
+</html>
