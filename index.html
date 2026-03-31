@@ -161,7 +161,7 @@
           <div class="w-full md:w-1/2 order-1 md:order-2">
             <div class="relative group">
               <div
-                class="relative aspect-square w-full max-w-[480px] mx-auto overflow-hidden rounded-2xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 shadow-2xl"
+                class="relative aspect-square w-full max-w-[480px] mx-auto rounded-2xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 shadow-2xl"
               >
                 <img
                   class="w-full h-full object-cover"
@@ -541,153 +541,167 @@ seguimiento administrativo
         </div>
       </section>
 
-      <!-- Certifications Carousel -->
-      <section
-        class="py-20 border-t border-black/5 dark:border-white/5 overflow-hidden"
-        id="certifications"
-      >
-        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-          <span class="w-8 h-[2px] bg-primary"></span>
-          Certificaciones
-        </h2>
-        <div class="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-snap-x">
-          <!-- Cert 1 -->
-          <a
-  href="https://www.credly.com/badges/d2805eaf-f9a0-45c8-8fc0-b94e8fee8066"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="block"
->
-  <div
-    class="flex-none w-[300px] scroll-snap-align-start
-           bg-card-light dark:bg-card-dark
-           p-6 rounded-xl
-           border border-black/5 dark:border-white/5
-           shadow-sm
-           hover:border-secondary-brown
-           transition-colors"
-  >
-    <div class="w-30 h-30 mx-auto bg dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-      <img
-        src="assets/img/full_stack_developer.png"
-        alt="Full Stack Developer Badge"
-        class="w-28 h-28"
-      />
-    </div>
+<section class="py-20 border-t border-black/5 dark:border-white/5" id="certifications">
+  <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+    <span class="w-8 h-[2px] bg-primary"></span>
+    Certificaciones
+  </h2>
 
-    <h4 class="font-bold text-lg leading-snug">
-      Full Stack Developer
-    </h4>
+  <!-- Carousel Container -->
 
-    <p class="text-sm text-neutral-500 mt-1">
-      Credly · Lifelong Learning UDD
-    </p>
+  <div class="relative">
+    <!-- Flecha izquierda -->
+    <button
+      id="certPrev"
+      type="button"
+      aria-label="Anterior"
+      class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-card-light dark:bg-card-dark border border-black/10 dark:border-white/10 shadow-md hover:bg-badge-hire/20 transition-colors flex items-center justify-center"
+    >
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
 
-    <p class="text-xs font-semibold text-secondary-brown mt-4 tracking-widest uppercase">
-      Issued 2025
-    </p>
-  </div>
-</a>
+    <!-- Flecha derecha -->
+    <button
+      id="certNext"
+      type="button"
+      aria-label="Siguiente"
+      class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-card-light dark:bg-card-dark border border-black/10 dark:border-white/10 shadow-md hover:bg-badge-hire/20 transition-colors flex items-center justify-center"
+    >
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
 
-          <!-- Cert 2 -->
-         <a
-  href="https://www.credly.com/badges/51a4ea94-c488-4b74-b1e4-06954f43e6b2"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="block"
->
-  <div
-    class="flex-none w-[300px] scroll-snap-align-start
-           bg-card-light dark:bg-card-dark
-           p-6 rounded-xl
-           border border-black/5 dark:border-white/5
-           shadow-sm
-           hover:border-secondary-brown
-           transition-colors"
-  >
-    <div class="w-30 h-30 mx-auto bg dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-      <img
-        src="assets/img/full_stack_insignia.png"
-        alt="Fullstack E-commerce Application Badge"
-        class="w-28 h-28"
-      />
-    </div>
-
-    <h4 class="font-bold text-lg leading-snug">
-      Full Stack E-commerce Application
-    </h4>
-
-    <p class="text-sm text-neutral-500 mt-1">
-      Credly · Lifelong Learning UDD
-    </p>
-
-    <p class="text-xs font-semibold text-secondary-brown mt-4 tracking-widest uppercase">
-      Issued 2025
-    </p>
-  </div>
-</a>
-          <!-- Cert 3 -->
-          <a
-  href="https://www.credly.com/badges/e3dfc330-244a-4969-9747-41e4597f60f7"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="block"
->
-  <div
-    class="flex-none w-[300px] scroll-snap-align-start
-           bg-card-light dark:bg-card-dark
-           p-6 rounded-xl
-           border border-black/5 dark:border-white/5
-           shadow-sm
-           hover:border-secondary-brown
-           transition-colors"
-  >
-    <div class="w-30 h-30 mx-auto bg dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center">
-      <img
-        src="assets/img/backend_authentication.png"
-        alt="Backend_authentication_developer"
-        class="w-28 h-28"
-      />
-    </div>
-
-    <h4 class="font-bold text-lg leading-snug">
-      Backend Authentication Developer
-    </h4>
-
-    <p class="text-sm text-neutral-500 mt-1">
-      Credly · Lifelong Learning UDD
-    </p>
-
-    <p class="text-xs font-semibold text-secondary-brown mt-4 tracking-widest uppercase">
-      Issued 2025
-    </p>
-  </div>
-</a>
-          <!-- Cert 4 -->
-          <div
-            class="flex-none w-[300px] scroll-snap-align-start bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-colors"
-          >
-            <div
-              class="w-20 h-20 bg-neutral-100 dark:bg-neutral-800 rounded-lg mb-6 flex items-center justify-center"
-            >
+    <!-- Viewport -->
+    <div
+      id="certificationsCarousel"
+      class="overflow-x-auto overflow-y-visible no-scrollbar scroll-smooth px-16 pt-6"
+    >
+      <!-- Track -->
+      <div class="flex gap-6 pb-4 w-max">
+        
+        <!-- Card 1 -->
+        <a
+          href="https://www.credly.com/badges/d2805eaf-f9a0-45c8-8fc0-b94e8fee8066"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-[340px] flex-shrink-0"
+        >
+          <div class="h-[320px] bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary-brown hover:-translate-y-2 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <div class="w-32 h-32 mx-auto bg-neutral-100 dark:bg-neutral-800 rounded-xl mb-6 flex items-center justify-center">
               <img
-                class="w-12 h-12 grayscale opacity-70"
-                data-alt="React certification badge from Meta"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyNsK67PUO9djaoZYmBZ9cQec0zaXRmDNgvib07se9y5wvJ-BKePdl7tVvw9Elelf3DlkBCoXk7AYTnkW2nAo0wjz0LLBSeSVU5PPhdNq_x42twjyCwAxAXvAgliNzXF1wFpxfkSxc5j_L2yKR2nSgV2YoNccZMCw2H5GKOOYNNFsQVC8-MTEP-HnZvgmi5GFebdthms7MX2-dYOs5vAU_DdV1PGWx8E6hTZ-ryMKkza0OACxiiZHux-2hZ-ixkKJmcMniOy5arXM"
+                src="assets/img/full_stack_developer.png"
+                alt="Full Stack Developer Badge"
+                class="w-24 h-24 object-contain"
               />
             </div>
-            <h4 class="font-bold text-lg leading-snug">
-              Advanced React Native
+
+            <h4 class="font-bold text-lg text-center leading-snug">
+              Full Stack Developer
             </h4>
-            <p class="text-sm text-neutral-500 mt-1">Meta Professional</p>
-            <p
-              class="text-xs font-bold text-primary mt-4 tracking-widest uppercase"
-            >
-              Issued 2020
+
+            <p class="text-sm text-neutral-500 text-center mt-1">
+              Credly · Lifelong Learning UDD
+            </p>
+
+            <p class="text-xs font-semibold text-secondary-brown mt-auto pt-4 text-center uppercase tracking-widest">
+              Issued 2025
             </p>
           </div>
-        </div>
-      </section>
+        </a>
+
+        <!-- Card 2 -->
+        <a
+          href="https://www.credly.com/badges/51a4ea94-c488-4b74-b1e4-06954f43e6b2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-[340px] flex-shrink-0"
+        >
+          <div class="h-[320px] bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:shadow-xl hover:border-secondary-brown flex flex-col">
+            <div class="w-32 h-32 mx-auto bg-neutral-100 dark:bg-neutral-800 rounded-xl mb-6 flex items-center justify-center">
+              <img
+                src="assets/img/full_stack_insignia.png"
+                alt="Full Stack E-commerce Application Badge"
+                class="w-24 h-24 object-contain"
+              />
+            </div>
+
+            <h4 class="font-bold text-lg text-center leading-snug">
+              Full Stack E-commerce Application
+            </h4>
+
+            <p class="text-sm text-neutral-500 text-center mt-1">
+              Credly · Lifelong Learning UDD
+            </p>
+
+            <p class="text-xs font-semibold text-secondary-brown mt-auto pt-4 text-center uppercase tracking-widest">
+              Issued 2025
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a
+          href="https://www.credly.com/badges/e3dfc330-244a-4969-9747-41e4597f60f7"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-[340px] flex-shrink-0"
+        >
+          <div class="h-[320px] bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary-brown hover:-translate-y-2 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <div class="w-32 h-32 mx-auto bg-neutral-100 dark:bg-neutral-800 rounded-xl mb-6 flex items-center justify-center">
+              <img
+                src="assets/img/backend_authentication.png"
+                alt="Backend Authentication Developer Badge"
+                class="w-24 h-24 object-contain"
+              />
+            </div>
+
+            <h4 class="font-bold text-lg text-center leading-snug">
+              Backend Authentication Developer
+            </h4>
+
+            <p class="text-sm text-neutral-500 text-center mt-1">
+              Credly · Lifelong Learning UDD
+            </p>
+
+            <p class="text-xs font-semibold text-secondary-brown mt-auto pt-4 text-center uppercase tracking-widest">
+              Issued 2025
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a
+          href="#"
+          class="w-[340px] flex-shrink-0"
+        >
+          <div class="h-[320px] bg-card-light dark:bg-card-dark p-6 rounded-xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary-brown hover:-translate-y-2 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <div class="w-32 h-32 mx-auto bg-neutral-100 dark:bg-neutral-800 rounded-xl mb-6 flex items-center justify-center">
+              <img
+                src="assets/img/tu_imagen.png"
+                alt="Tu certificación"
+                class="w-24 h-24 object-contain"
+              />
+            </div>
+
+            <h4 class="font-bold text-lg text-center leading-snug">
+              Tu Certificación
+            </h4>
+
+            <p class="text-sm text-neutral-500 text-center mt-1">
+              Credly · Lifelong Learning UDD
+            </p>
+
+            <p class="text-xs font-semibold text-secondary-brown mt-auto pt-4 text-center uppercase tracking-widest">
+              Issued 2025
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+    
+
 
       <!-- Contact Section -->
       <section
@@ -698,22 +712,21 @@ seguimiento administrativo
           <div class="space-y-8">
             <h2 class="text-3xl font-bold flex items-center gap-3">
               <span class="w-8 h-[2px] bg-primary"></span>
-              Get in Touch
+              Contáctame
             </h2>
             <p
               class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed"
             >
-              Interested in working together or have a question? Feel free to
-              reach out via the form or my social channels.
+              ¿Interesada/o en colaborar o simplemente quieres saludar? ¡No dudes en contactarme! Estoy siempre disponible para nuevas oportunidades, proyectos emocionantes o simplemente para conectar con otros profesionales
             </p>
             <div class="space-y-4">
               <div class="flex items-center gap-4">
                 <div
                   class="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center"
                 >
-                  <span class="material-symbols-outlined text-xl">mail</span>
+                  <span class="material-symbols-outlined text-xl">email</span>
                 </div>
-                <span class="font-medium">hello@devportfolio.com</span>
+                <span class="font-medium">monfloresespinoza29@gmail.com</span>
               </div>
               <div class="flex items-center gap-4">
                 <div
@@ -723,7 +736,7 @@ seguimiento administrativo
                     >location_on</span
                   >
                 </div>
-                <span class="font-medium">San Francisco, CA</span>
+                <span class="font-medium">Santiago, Chile</span>
               </div>
             </div>
             <div class="flex gap-4 pt-4">
@@ -756,11 +769,11 @@ seguimiento administrativo
               <div class="space-y-2">
                 <label
                   class="text-sm font-bold uppercase tracking-widest text-neutral-500"
-                  >Name</label
+                  >Nombre</label
                 >
                 <input
                   class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
-                  placeholder="John Doe"
+                  placeholder="Nombre Completo"
                   type="text"
                 />
               </div>
@@ -771,18 +784,18 @@ seguimiento administrativo
                 >
                 <input
                   class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
-                  placeholder="john@example.com"
+                  placeholder="correo@ejemplo.com"
                   type="email"
                 />
               </div>
               <div class="space-y-2">
                 <label
                   class="text-sm font-bold uppercase tracking-widest text-neutral-500"
-                  >Message</label
+                  >Mensaje</label
                 >
                 <textarea
                   class="w-full bg-background-light dark:bg-background-dark border-black/5 dark:border-white/5 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all"
-                  placeholder="How can I help you?"
+                  placeholder="¿En qué puedo ayudarte?"
                   rows="4"
                 ></textarea>
               </div>
@@ -790,7 +803,7 @@ seguimiento administrativo
                 class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
                 type="submit"
               >
-                Send Message
+                Enviar Mensaje
                 <span class="material-symbols-outlined text-sm">send</span>
               </button>
             </form>
@@ -802,8 +815,9 @@ seguimiento administrativo
       class="py-12 border-t border-black/5 dark:border-white/5 text-center text-sm text-neutral-500"
     >
       <div class="max-w-7xl mx-auto px-6">
-        <p>© 2024 DevPortfolio. Built with React, Tailwind CSS and passion.</p>
+        <p>© 2026 Montserrat Flores. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
